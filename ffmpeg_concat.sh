@@ -12,13 +12,13 @@ cat <<USAGE
 
 Usage:
 
-  ./ffmpeg_concat.sh [file ...]
+  ffmpeg_concat [file ...]
 
   Example:
 
      1) Concat all .mkv files in current directory:
 
-       ./ffmpeg_concat.sh *.mkv
+       ffmpeg_concat *.mkv
 
   Output will 'output_concat.mkv'.
 

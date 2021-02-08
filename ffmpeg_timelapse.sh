@@ -12,13 +12,13 @@ cat <<USAGE
 
 Usage:
 
-  ./ffmpeg_timelapse.sh <input file> <factor>
+  ffmpeg_timelapse <input file> <factor>
 
   Example:
 
      1) Speed up video by 60x:
 
-       ./ffmpeg_timelapse.sh input.mkv 60
+       ffmpeg_timelapse input.mkv 60
 
   Output will be same name as input file with '_timelapse' appended.
 

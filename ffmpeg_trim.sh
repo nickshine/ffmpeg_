@@ -12,17 +12,17 @@ cat <<USAGE
 
 Usage:
 
-  ./ffmpeg_trim.sh <input file> <start> [end]
+  ffmpeg_trim <input file> <start> [end]
 
   Example:
 
      1) Trim start of video at the 52 min mark:
 
-       ./ffmpeg_trim.sh input.mkv 00:52:00
+       ffmpeg_trim input.mkv 00:52:00
 
      2) Trim video to start at 5 min mark and end at 10 min mark:
 
-       ./ffmpeg_trim.sh input.mkv 00:05:00 00:10:00
+       ffmpeg_trim input.mkv 00:05:00 00:10:00
 
   Output will be same name as input file with '_trim' appended.
 
