@@ -40,12 +40,12 @@ output_file="${1%.*}_trim.${1##*.}"
 if [ "$#" -eq 2 ]; then
   echo -e "\n${green}✂️  Trimming start to '$2' mark ✂️ ${nc}\n"
 
-  ffmpeg -ss $2 -i $1 -c copy $output_file
+  ffmpeg -i $1 -ss $2 -c copy $output_file
 
 elif [ "$#" -eq 3 ]; then
   echo -e "\n${green}✂️  Trimming from '$2' to '$3' ✂️ ${nc}\n"
 
-  ffmpeg -ss $2 -to $3 -i $1 -c copy $output_file
+  ffmpeg -i $1 -ss $2 -to $3 -c copy $output_file
 
 else
   usage
